@@ -42,12 +42,15 @@ body{
 }
 
 .wrap{
-    width: 1200px;
+    width: 1250px;
     margin: 0px auto;
 }
 
 
-.gear{
+
+
+.gear, .icon{
+    /*`Ponele los logos que queremos*/
     font-family: "WebSymbolsRegular";
 
 }
@@ -152,6 +155,58 @@ body{
     letter-spacing: 2px;
     margin: 27px auto;
     text-align: center;
+
+}
+
+/*TARJETAS*/
+
+.card{
+    float: left;
+    overflow: hidden;
+    width: 205px;
+    height: 305px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2 px #ddd;
+    margin: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 300ms;
+
+}
+
+.card:last-child{
+    margin-right: 0px;
+}
+
+.card .icon{
+    display: block;
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 130px;
+    text-align: center;
+    margin: 0px auto;
+
+}
+
+.card .category{
+    width: 100%;
+    height: 50px;
+    font-family: "TrebuchetMS";
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #00538c
+
+
+
+}
+
+.card .description{
+    color: #0072be;
+    font-family: "TrebuchetMS";
+    text-align: center;
+    font-size: 15px;
 
 }
 
